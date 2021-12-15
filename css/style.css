@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0; box-sizing: border-box;
+}
+/* *******global css******* */
+
+.container{
+    width: 1140px;
+    margin: auto;
+   
+}
+a{
+    text-decoration: none;
+}
+/* ***********header css ***************/
+header{
+    width: 100%;
+    height: 90vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1.1)),url(../img/img1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   background-attachment: fixed;
+    
+  
+}
+.header-bar{
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+}
+.left-nav{
+    flex-basis: 30%;
+    
+}
+header button:hover{
+    background-color:#fc2056 ;
+    color: white;
+    cursor: pointer;
+}
+.left-nav h1{
+    color: white;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}
+.rigt-nav{
+    flex-basis: 70%;
+   
+}
+.right-nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+    
+}
+.right-nav ul li a{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+.right-nav ul li a:hover{
+    color:#fc2056;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    
+}
+.right-nav ul li a::after{
+    content:'';
+width: 0px;
+height: 2px;
+background-color: #fc2056;
+position: absolute;
+bottom: -5px;
+left: -3px;
+
+}
+.right-nav ul li a:hover::after{
+    width: 55px;
+    
+    transition: all 0.5s linear;
+}
+
+
+.right-nav ul{
+    display: inline-block;
+ 
+}
+.right-nav a{
+    margin-left:15px ;
+}
+.right-nav button{
+padding: 10px 20px;
+border-radius: 15px;
+margin-left: 15px;
+background-color: transparent;
+border: 1px solid white;
+font-size:15px;
+font-weight: 600;
+font-family: 'Times New Roman', Times, serif;
+color: white;
+transition: all 0.5s linear;
+
+
+}
+header button a{
+    color: white;
+}
+
+.head-con{
+    width: 100%;
+    height: 73vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head-con h3{
+    font-size: 21px;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+}
+.head-con h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: monospace;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.head-con button{
+    padding: 15px 30px;
+    border-radius: 25px;
+   border: none;
+   outline: none;
+   background-color: #fb2056;
+   color: white;
+   transition: all 0.5s linear;
+}
+
+
+.s1{
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 370px;
+    background-color: #fc2056;
+}
+/* *******section-1 css********** */
+.sec-1{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f5f9;
+}
+.sec-1 p{
+    text-align: center;
+    margin-top: 20px;
+}
+.sec-1 h3{
+    padding-top:10px ;
+    color: gray;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* *******section-2 css*********** */
+.sec-2{
+    width: 100%;
+    height:80vh ;
+   margin: auto;
+   padding-top: 55px;
+   
+}
+.content-item{
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+.content-item h2{
+    text-align: center;
+margin-bottom: 40px;
+text-transform: uppercase;
+font-size: 25px;
+letter-spacing: 3px;
+}
+.content-gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 40px;
+}
+.item{
+    width: 100%;
+    padding-left: 80px;
+    position: relative;
+    
+}
+.item img{
+    width:100%;
+    border-radius: 10px;
+   
+}
+.shadow{
+position: relative;
+z-index: 99999;
+
+}
+.sh{
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgb(238, 238, 238);
+top: 14px;
+left: 12px;
+z-index: -1;
+border-radius: 6px;
+}
+
+
+.item h3{
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.item p{
+    text-align: center;
+    line-height: 20px;
+    color: gray;
+    font-weight: 900;
+}
+.item a{
+   display: flex;
+   justify-content: center;
+   margin-top: 25px;
+   letter-spacing: 2px;
+   color: #fc2056;
+   font-size: 12px;
+}
+.content-item .line{
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    right:545px;
+    background-color: #fc2056;
+}
+/* *****section-3********** */
+
+.sec-3{
+    width: 100%;
+    height: 80vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1.1)),url(../img/img6.png);
+    background-repeat: no-repeat;
+    background-size:100% 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+   
+    
+}
+.sec-left{
+flex-basis: 50%;
+
+}
+.sec-right{
+    flex-basis: 50%;
+    padding-bottom: 142px;
+    position: relative;
+   
+}
+.sec-right h1{
+    color: white;
+    font-size: 50px ;
+    padding-bottom: 35px;
+
+}
+.line{
+    width: 50px;
+    height: 2px;
+  
+    position: absolute;
+    top: 120px;
+    background-color: #fc2056;
+}
+.sec-right p{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.sec-right a{
+    color: white;
+ 
+}
+
+/* **********section4 css******** */
+.sec-4{
+    width: 100%;
+    height: 80vh;
+  
+}
+.con{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con-left{
+    flex-basis: 40%;
+    position: relative;
+    
+}
+
+.con-right{
+    flex-basis: 60%;
+display: grid;
+grid-template-rows: auto auto;
+grid-template-columns: auto auto;
+
+}
+.con-left h1{
+font-size: 40px;
+margin-top: -280px;
+
+}
+.con-left p{
+    padding-top: 50px;
+    color: rgb(53, 51, 51);
+    font-size: 20px;
+    line-height: 25px;
+    word-spacing: 2px;
+}
+.s2{
+    width: 50px;
+    height: 2px;
+  
+    position: absolute;
+    top: -140px;
+    background-color: #fc2056;
+}
+.con-right .right-1{
+    padding-right: 25px;
+    
+}
+.right-1 img{
+    margin-bottom: 25px;
+}
+.con-left a{
+    
+
+   color: white;
+  
+ }
+ .con-left button{
+     margin-top: 25px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+   background-color: #fb2056;
+
+
+
+ }
+
+
+ /* *****footer css******* */
+
+ footer{
+     color: white;
+     background-color: black;
+     width: 100%;
+     height: 11vh;
+     text-align: center;
+     padding-top: 25px;
+     line-height: 30px;
+ }
